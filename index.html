@@ -93,6 +93,78 @@
             transition: transform 0.1s linear;
         }
 
+        /* ================= MEDIA QUERIES ================= */
+
+        /* Tablet (≤ 992px) */
+        @media (max-width: 992px) {
+            .carousel-item {
+                height: 100vh;
+                /* fit tablet screen */
+                background-position: center;
+            }
+
+            .carousel-caption h1 {
+                font-size: 2rem;
+            }
+
+            .carousel-caption p {
+                font-size: 1rem;
+            }
+
+            .side-feed {
+                width: 300px;
+                right: -60px;
+                bottom: -30px;
+            }
+        }
+
+        /* Mobile (≤ 576px) */
+        @media (max-width: 576px) {
+            .carousel-item {
+                height: 100vh;
+                /* full screen */
+                background-position: center;
+            }
+
+            .carousel-caption {
+                bottom: 20%;
+                gap: 15px;
+                padding: 0 10px;
+            }
+
+            .carousel-caption h1 {
+                font-size: 1.4rem;
+                line-height: 1.4;
+            }
+
+            .carousel-caption p {
+                font-size: 0.9rem;
+            }
+
+            .carousel-caption img {
+                max-width: 80px;
+            }
+
+            .hero-btn {
+                padding: 8px 18px;
+                font-size: 0.85rem;
+            }
+
+            .side-feed {
+                display: none;
+                /* hide insta feed on mobile */
+            }
+
+            .follower-icon-container {
+                padding: 0px;
+            }
+
+            .stats-section {
+
+                padding: 20px 0px;
+            } .subscribers-section{ padding: 0px 0px;}
+        }
+
         .gear-icon-container,
         .follower-icon-container {
             display: flex;
@@ -103,7 +175,7 @@
         }
 
         .follower-icon-container {
-            padding: 100px 0px;
+            padding-top: 100px; padding-bottom: 0px;
         }
 
         .dollar-icon-container {
@@ -137,8 +209,7 @@
         }
 
         .stats-section {
-
-            padding: 100px 30px;
+            padding: 50px 30px;
         }
 
         .stats-card {
@@ -193,7 +264,7 @@
 
         .subscribers-section {
             color: #fff;
-            padding: 100px 0;
+            padding-top: 100px; padding-bottom: 20px;
             position: relative;
             overflow: hidden;
         }
@@ -496,7 +567,7 @@
                     <div class="col-md-7">
                         <div class="row g-4">
                             <!-- Feature 1 -->
-                            <div class="feature col-6 d-flex align-items-center">
+                            <div class="feature col-md-6 col-12 d-flex align-items-center">
                                 <div class="icon me-3">
                                     <img src="assets/feature-1.png" width="40" alt="">
                                 </div>
@@ -505,8 +576,9 @@
                                     <small>Promotion Strategy</small>
                                 </div>
                             </div>
+
                             <!-- Feature 2 -->
-                            <div class="feature col-6 d-flex align-items-center">
+                            <div class="feature col-md-6 col-12 d-flex align-items-center">
                                 <div class="icon me-3">
                                     <img src="assets/feature-2.png" width="40" alt="">
                                 </div>
@@ -515,8 +587,9 @@
                                     <small>Content Plan</small>
                                 </div>
                             </div>
+
                             <!-- Feature 3 -->
-                            <div class="feature col-6 d-flex align-items-center">
+                            <div class="feature col-md-6 col-12 d-flex align-items-center">
                                 <div class="icon me-3">
                                     <img src="assets/feature-3.png" width="40" alt="">
                                 </div>
@@ -525,8 +598,9 @@
                                     <small>Photo Posting</small>
                                 </div>
                             </div>
+
                             <!-- Feature 4 -->
-                            <div class="feature col-6 d-flex align-items-center">
+                            <div class="feature col-md-6 col-12 d-flex align-items-center">
                                 <div class="icon me-3">
                                     <img src="assets/feature-4.png" width="40" alt="">
                                 </div>
@@ -535,8 +609,9 @@
                                     <small>Instagram Page Design</small>
                                 </div>
                             </div>
+
                             <!-- Feature 5 -->
-                            <div class="feature col-6 d-flex align-items-center">
+                            <div class="feature col-md-6 col-12 d-flex align-items-center">
                                 <div class="icon me-3">
                                     <img src="assets/feature-5.png" width="40" alt="">
                                 </div>
@@ -545,8 +620,9 @@
                                     <small>& Market Research</small>
                                 </div>
                             </div>
+
                             <!-- Feature 6 -->
-                            <div class="feature col-6 d-flex align-items-center">
+                            <div class="feature col-md-6 col-12 d-flex align-items-center">
                                 <div class="icon me-3">
                                     <img src="assets/feature-6.png" width="40" alt="">
                                 </div>
@@ -555,8 +631,9 @@
                                     <small>For Your Instagram</small>
                                 </div>
                             </div>
+
                             <!-- Feature 7 -->
-                            <div class="feature col-6 d-flex align-items-center">
+                            <div class="feature col-md-6 col-12 d-flex align-items-center">
                                 <div class="icon me-3">
                                     <img src="assets/feature-7.png" width="40" alt="">
                                 </div>
@@ -565,8 +642,9 @@
                                     <small>Writing Posts</small>
                                 </div>
                             </div>
+
                             <!-- Feature 8 -->
-                            <div class="feature col-6 d-flex align-items-center">
+                            <div class="feature col-md-6 col-12 d-flex align-items-center">
                                 <div class="icon me-3">
                                     <img src="assets/feature-8.png" width="40" alt="">
                                 </div>
@@ -590,7 +668,7 @@
 
                     <!-- Left Title -->
                     <div class="col-lg-3 d-flex align-items-center">
-                        <h2 class="fw-bold display-4">
+                        <h2 class="fw-bold display-5">
                             Well... We <br><span class="text-warning">Are Best</span>
                         </h2>
                     </div>
@@ -625,7 +703,7 @@
                 </div>
             </div>
         </section>
-        <div class="container mt follower-icon-container text-center">
+        <div class="container follower-icon-container text-center">
             <img src="assets/follower.png" width="80" alt="">
             <h2 class="display-3 service-title">We Attract New Subscribers
                 And Customers</h2>
